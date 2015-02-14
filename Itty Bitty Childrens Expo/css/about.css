@@ -24,7 +24,9 @@ body {
     }
 
         .navbar-default .navbar-nav > li > a:hover {
-            color: #aeaeae;
+            color: #000;
+            font-weight: bold;
+            font-size: 15px;
         }
 
         .navbar-default .navbar-nav > li > a:focus {
