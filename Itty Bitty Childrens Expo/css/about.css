@@ -25,8 +25,6 @@ body {
 
         .navbar-default .navbar-nav > li > a:hover {
             color: #000;
-            font-weight: bold;
-            font-size: 15px;
         }
 
         .navbar-default .navbar-nav > li > a:focus {
@@ -46,27 +44,26 @@ body {
         }
 
 #ul-menu li:nth-child(2) {
-    background-color: #0d3158;
+    background-color: #fd0302;
     
 }
 
 #ul-menu li:nth-child(3) {
-    background-color: #00bdb8;
+    background-color: #fec415;
 }
 
 #ul-menu li:nth-child(4) {
-    background-color: #006a3f;
+    background-color: #06ac10;
 }
 
 #ul-menu li:nth-child(5) {
-    background-color: #9a166f;
+    background-color: #0861b3;
 }
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
     color: #000;
-    font-weight: bold;
-    font-size: 15px;
-    background-color: #9aa9be;
+    font-size: 16px;
+    background-color: #d5d5d5;
 }
 
 
@@ -148,3 +145,36 @@ div article {
 p {
     margin:0;
 }
+
+
+/* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
+The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children 
+of those sections to manage the look and feel of the site. */
+
+.intro-section {
+    height: 100%;
+    padding-top: 150px;
+    text-align: center;
+    background: #fff;
+}
+
+.about-section {
+    height: 100%;
+    padding-top: 150px;
+    text-align: center;
+    background: #fff;
+}
+
+.faq-section {
+    height: 100%;
+    padding-top: 150px;
+    text-align: center;
+    background: #fff;
+}
+
+.sponsors-section {
+    height: 100%;
+    padding-top: 150px;
+    text-align: center;
+    background: #fff;
+}fd0302
