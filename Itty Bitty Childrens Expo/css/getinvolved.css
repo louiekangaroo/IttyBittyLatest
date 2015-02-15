@@ -44,21 +44,21 @@ body {
         }
 
 #ul-menu li:nth-child(2) {
-    background-color: #fb0302;
+    background-color: #2289e8;
     
 }
 
 #ul-menu li:nth-child(3) {
-    background-color: #ff930d;
+    background-color: #518fc7;
 }
 
 #ul-menu li:nth-child(4) {
-    background-color: #07ad11;
+    background-color: #1973c5;
 }
 
 #ul-menu li:nth-child(5) {
-    background-color: #0861b3;
-}
+    background-color: #09569d;
+}   
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
     color: #000;
