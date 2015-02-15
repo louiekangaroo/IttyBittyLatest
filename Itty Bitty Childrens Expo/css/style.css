@@ -138,7 +138,7 @@ a:hover , a:active, a:visited, a:link{
      .circle-design {
           cursor: pointer;
         
-          -webkit-transform: scale(1.4);
+      -webkit-transform: scale(1.4);
           -ms-transform: scale(1.4);
           transform: scale(1.4);
           transition: all .3s ease-in-out;
