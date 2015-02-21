@@ -41,29 +41,29 @@ body {
         }
 
 #ul-menu li:nth-child(2) {
-    background-color: #DDB6CD;
+    background-color: #F2D673;
     margin-right: 1px;
     
 }
 
 #ul-menu li:nth-child(3) {
-    background-color: #DDB6CD;
+    background-color: #F2D673;
     margin-right: 1px;
 }
 
 #ul-menu li:nth-child(4) {
-    background-color: #DDB6CD;
+    background-color: #F2D673;
     margin-right: 1px;
 }
 
 #ul-menu li:nth-child(5) {
-    background-color: #DDB6CD;
+    background-color: #F2D673;
     margin-right: 1px;
 }
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
     color: #000;
-    background-color: #d5d5d5;
+    background-color: transparent;
 }
 
 
