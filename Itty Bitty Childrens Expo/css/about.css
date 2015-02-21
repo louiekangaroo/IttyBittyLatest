@@ -147,6 +147,7 @@ p {
 }
 
 
+
 /* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
 The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children 
 of those sections to manage the look and feel of the site. */
@@ -177,4 +178,21 @@ of those sections to manage the look and feel of the site. */
     padding-top: 150px;
     text-align: center;
     background: #fff;
-}fd0302
+}
+
+#footer ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 7.5px;
+}
+
+#footer ul > li {
+    display: inline-block;
+    margin: 0 7.5px;
+}
+
+@media only screen and (min-width: 768px) {
+    #footer .social-icons {
+        float: right;   
+    }
+}
