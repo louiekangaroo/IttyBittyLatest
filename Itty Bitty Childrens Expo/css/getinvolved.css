@@ -12,7 +12,7 @@ body {
 
 
 .navbar-default {
-    background-color: #fff;
+    background-color: #F8F8F8;
     border-bottom: 1px solid #000;
 }
 
@@ -44,25 +44,27 @@ body {
         }
 
 #ul-menu li:nth-child(2) {
-    background-color: #e4491a;
-    
+    background-color: #26B3AA;
+    margin-right: 1px;
 }
 
 #ul-menu li:nth-child(3) {
-    background-color: #fe870a;
+    background-color: #26B3AA;
+    margin-right: 1px;
 }
 
 #ul-menu li:nth-child(4) {
-    background-color: #e4d102;
+    background-color: #26B3AA;
+    margin-right: 1px;
 }
 
 #ul-menu li:nth-child(5) {
-    background-color: #97c202;
+    background-color: #26B3AA;
+    margin-right: 1px;
 } 
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
     color: #000;
-    font-size: 16px;
     background-color: transparent;
 }
 
