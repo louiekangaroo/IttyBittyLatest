@@ -6,6 +6,10 @@
 }
 
 body {
+    background: url("../images/bg2.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
 }
@@ -156,43 +160,26 @@ of those sections to manage the look and feel of the site. */
     height: 100%;
     padding-top: 150px;
     text-align: center;
-    background: #fff;
+    background: transparent;
 }
 
 .about-section {
     height: 100%;
     padding-top: 150px;
     text-align: center;
-    background: #fff;
+    background: transparent;
 }
 
 .faq-section {
     height: 100%;
     padding-top: 150px;
     text-align: center;
-    background: #fff;
+    background: transparent;
 }
 
 .sponsors-section {
     height: 100%;
     padding-top: 150px;
     text-align: center;
-    background: #fff;
-}
-
-#footer ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0 7.5px;
-}
-
-#footer ul > li {
-    display: inline-block;
-    margin: 0 7.5px;
-}
-
-@media only screen and (min-width: 768px) {
-    #footer .social-icons {
-        float: right;   
-    }
+    background: transparent;
 }

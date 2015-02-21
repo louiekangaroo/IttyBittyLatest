@@ -323,20 +323,3 @@ p
 {
     clear: both;
 }
-
-#footer ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0 7.5px;
-}
-
-#footer ul > li {
-    display: inline-block;
-    margin: 0 7.5px;
-}
-
-@media only screen and (min-width: 768px) {
-    #footer .social-icons {
-        float: right;   
-    }
-}
