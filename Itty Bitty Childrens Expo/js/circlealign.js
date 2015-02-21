@@ -50,7 +50,7 @@ $( document ).ready(function() {
 					location.href = "news.html";
 					break;
 				case "Contact Us":
-					location.href = "contactus.html"
+					location.href = "contact.html"
 					break;
 			}
 

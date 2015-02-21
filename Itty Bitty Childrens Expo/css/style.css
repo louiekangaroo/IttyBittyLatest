@@ -113,7 +113,7 @@ a:hover , a:active, a:visited, a:link{
 ********* Mobile ******
 ************************/
 
-@media only screen and (max-width: 360px) and (max-height: 640px)  {
+@media only screen and (max-width: 414px) and (max-height: 736px)  {
      .homepagetab {
             display: none;   
      }
@@ -155,4 +155,9 @@ a:hover , a:active, a:visited, a:link{
           box-shadow:1px 1px 7px #4d4d4d;
       }
 
+    body {
+        background-image:url("../images/bg2.jpg");
+        background-repeat:no-repeat;
+        background-size: 200% 100%;
+    }
 }
