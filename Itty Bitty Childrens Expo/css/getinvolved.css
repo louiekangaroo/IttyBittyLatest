@@ -68,6 +68,10 @@ body {
     margin-right: 1px;
 } 
 
+#ul-menu li:nth-child(6) {
+    background-color: #26B3AA;
+    margin-right: 1px;
+} 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
     color: #000;
     background-color: transparent;
@@ -183,6 +187,32 @@ of those sections to manage the look and feel of the site. */
     padding-top: 150px;
     text-align: center;
     background: rgba(255, 255, 255, 0.1);
+}
+
+.interest-section {
+    height: 100%;
+    padding-top: 150px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+p {
+    font-size: 16px;
+    font-family: "museo-slab",serif;
+    margin: 10px 5px 15px 20px;
+}
+
+p.sub {
+    margin: 10px 5px 15px 150px;
+}
+
+h1{
+    font-family: "aw-conqueror-inline",sans-serif;
+    color: #000;
+    font-size: 3.5em;
+    line-height: 2em;
+    padding-bottom: 20px;
+    text-transform: uppercase;
 }
 
 
