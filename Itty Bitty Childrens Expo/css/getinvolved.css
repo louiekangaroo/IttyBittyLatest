@@ -242,8 +242,18 @@ h1{
     border-bottom: 2px solid #45aed6;
 }
 
-
-
+input, textarea{
+    padding: 1px 0px;
+    
+    width: 20%;
+    height: 30;
+    font-size: 18px;
+    border-radius: 4px;
+    color: #333;
+    text-align: center;
+    background-color: white;
+    font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+}
 
 
 @media screen and (max-width: 414px) and (max-height: 736px) {
