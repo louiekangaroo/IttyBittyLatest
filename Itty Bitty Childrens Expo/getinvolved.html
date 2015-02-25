@@ -15,7 +15,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/scrolling-nav.css" rel="stylesheet">
     <link href="css/getinvolved.css" rel="stylesheet">
-
+    <link href="css/reg.css" rel="stylesheet">
 
     <!--Javascript-->
     <script src="js/jquery.js"></script>
@@ -149,42 +149,133 @@
             
         </div>
     </section>
-    
+     <!-- Register your interest -->
     <section id="interest" class="interest-section">
         <div class="container divContainer">
             <h1>REGISTER YOUR INTEREST</h1>
-                <div class="row">
+             <div class="row">
                 <div class="col-sm-12" style="visibility: visible; margin-bottom: 25px;">
                     <h3 class="column-title"></h3>
                     <div class="column-div">
-                    <p>
-                    <form>
-                        Company/Organization:    <input type="text" name="company">
-                        <br>
-                        Type of Company/Organization: <input type="text" name="lastname">
-                        <br>
-                        Name: <input type="text" name="name" value='first, last'>
-                        <br>
-                        Job Title: <input type="text" name="jobtitle" value=''>
-                        <br>
-                        Phone Number: <input type="text" name="phoneno" value=''>
-                        <br>
-                        Email: <input type="text" name="email" value=''>
-                        <br>
-                        Comments:<textarea name="comments" id="comments"></textarea>
-                        <br>
-                        <input type="checkbox" name="volunteer" value="sponsor">Sponsorship<br>
-                        <input type="checkbox" name="volunteer" value="exhibit">Exhibiting<br>
-                        <input type="checkbox" name="volunteer" value="both">Both Sponsorship & Exhibiting<br>
-                        
-                        <input type="submit" value="Submit">
+                      
+          <span class="center" >* required field.</span>
+<form method="post" action="process_registration.php">   
 
-                    </form>
-                    </p>
+<table style = "text-align: left; padding:2px;">
+  <tr>
+    <td>
+      Company/Ogranisation:
+    </td>
+    <td>
+      <input type="text" name="company" >
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Company/Organisation Type: 
+    </td>
+    <td>
+      <select name="comptype" >
+        <option value="">Please Select</option>
+        <option value="Commercial">Commercial</option>
+        <option value="Non-profit">Non-profit</option>
+        <option value="Government">Government</option>
+        <option value="Hospital">Hospital</option>
+      </select>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      First Name: 
+    </td>
+    <td>
+      <input type="text" name="fname" required>
+      <span class="error">* </span>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Last Name: 
+    </td>
+    <td>
+      <input type="text" name="lname" required>
+      <span class="error">* </span>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Job Title:
+    </td>
+    <td>
+      <input type="text" name="jobtitle">
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Phone Number:
+    </td>
+    <td>
+      <input type="text" name="pnumber" required>
+      <span class="error">* </span>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Email Address:
+    </td>
+    <td>
+      <input type="email" name="eadd" required>
+      <span class="error">* </span>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Comments and Inquiries:
+    </td>
+    <td>
+      <textarea cols="35" name="remarks" rows ="7"></textarea>
+      
+    </td>
+  </tr>
+  <tr>
+    <td>
+      I am interested in..
+    </td>
+    <td>
+      <input type = "radio"
+                 name = "regtype"
+                 id = "sponsor"
+                 value = "Sponsorship"
+                 checked = "checked" />
+          <label for = "sponsor">Sponsorship</label>
+          <br>
+          <input type = "radio"
+                 name = "regtype"
+                 id = "exhibitor"
+                 value = "Exhibiting" />
+          <label for = "exhibitor">Exhibiting</label>
+ <br>
+          <input type = "radio"
+                 name = "regtype"
+                 id = "both"
+                 value = "Both - Sponsorship and Exhibiting" />
+          <label for = "both">Both - Sponsorship and Exhibiting</label>
+           
+    </td>
+  </tr>
+  <tr >
+      <td colspan="2" class="center"><input type="submit" name="submit" value="Submit"> </td>
+  </tr>
+
+
+</table>
+         
+   
+</form>
+        </div>
                     </div>
                 </div>
-            </div>  
-        </div>
+          
     </section>
 
     <footer id="footer">
