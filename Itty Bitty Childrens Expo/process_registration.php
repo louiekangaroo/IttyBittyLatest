@@ -1,5 +1,4 @@
 <?php 
-
 require_once "Mail.php";
 require_once "Mail/mime.php";
 require("connection.php");
@@ -52,8 +51,6 @@ $timeout = "45";				 // typical timeout. try 45 for slow servers
 $username = "louiedbest@gmail.com"; // the login for your smtp
 $password = "uGYBDA7FBJ15FxBGIQAC6A";			// the password for your smtp
  
-
-
 $headers = array ('From' => $From,
   'To' => $to,
   'Subject' => $subject);
@@ -75,12 +72,10 @@ $mail = $smtp->send($to, $headers, $body);
  
 if (PEAR::isError($mail)) {
   echo("<p>" . $mail->getMessage() . "</p>");
-} else {
-  echo("<p>Message successfully sent!</p>");
-}
-		echo "record successfully added!";		
+} 
+		//echo "record successfully added!";	
+       
+         header('Location:getinvolved.html');
 	 }
-
-
 
 ?>

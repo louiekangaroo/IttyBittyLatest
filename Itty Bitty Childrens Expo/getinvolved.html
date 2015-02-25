@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -159,8 +159,8 @@
                 <div class="col-sm-12" style="visibility: visible; margin-bottom: 25px;">
                     <h3 class="column-title"></h3>
                     <div class="column-div">
-                        <!--<span class="center">* Required Field.</span>-->
-                        <form class="form-horizontal" id="reg-form">
+                        <span class="center">* Required Field.</span>
+                        <form class="form-horizontal" id="reg-form" method = "post" action ="process_registration.php">
                             <fieldset>
 
                                 <!-- Form Name -->
@@ -191,19 +191,21 @@
 
                                 <!-- First Name-->
                                 <div class="form-group">
-                                    <label class="col-md-4 control-label" for="txtFName">First Name</label>
+                                    <label class="col-md-4 control-label" for="txtFName">First Name <span class="error">*</span></label>
                                     <div class="col-md-4">
                                         <input id="txtFName" name="fname" type="text" class="form-control input-md" required>
-                                        <!--<span class="error">* </span>-->
+                                       
+                              
                                     </div>
                                 </div>
 
                                 <!-- Last Name-->
                                 <div class="form-group">
-                                    <label class="col-md-4 control-label" for="txtLName">Last Name</label>
+                                    <label class="col-md-4 control-label" for="txtLName">Last Name <span class="error">* </span></label>
                                     <div class="col-md-4">
+                                       
                                         <input id="txtLName" name="lname" type="text" class="form-control input-md" required>
-                                        <!--<span class="error">* </span>-->
+                                       
                                     </div>
                                 </div>
 
@@ -218,19 +220,19 @@
 
                                 <!-- Phone Number-->
                                 <div class="form-group">
-                                    <label class="col-md-4 control-label" for="txtPhone">Phone Number</label>
+                                    <label class="col-md-4 control-label" for="txtPhone">Phone Number<span class="error">* </span></label>
                                     <div class="col-md-4">
                                         <input id="txtPhone" name="pnumber" type="number" class="form-control input-md" required>
-                                        <!--<span class="error">* </span>-->
+                                        
                                     </div>
                                 </div>
 
                                 <!-- Email-->
                                 <div class="form-group">
-                                    <label class="col-md-4 control-label" for="txtEmail">Email Address</label>
+                                    <label class="col-md-4 control-label" for="txtEmail">Email Address<span class="error">* </span></label>
                                     <div class="col-md-4">
                                         <input id="txtEmail" name="eadd" type="email" class="form-control input-md" required>
-
+                                        
                                     </div>
                                 </div>
 
@@ -271,7 +273,7 @@
                                 <div class="form-group">
                                     <label class="col-md-4 control-label" for="btnSubmit"></label>
                                     <div class="col-md-4">
-                                        <button id="btnSubmit" name="btnSubmit" class="btn btn-primary">Submit</button>
+                                        <button id="btnSubmit" name="btnSubmit" class="btn btn-primary" onclick="alert('Thank you for your interest!')" >Submit</button>                            
                                     </div>
                                 </div>
                             </fieldset>
