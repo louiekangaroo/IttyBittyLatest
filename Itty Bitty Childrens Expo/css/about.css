@@ -15,12 +15,15 @@ body {
     font-weight: 400;
 }
 
+
+
 .navbar-default {
     background-color: rgba(46, 46, 46, 0.8);
     border-bottom: 1px solid #000;
 }
 
-    .navbar-default .navbar-nav > li > a {
+  
+  .navbar-default .navbar-nav > li > a {
         color: #fff;
     }
 
@@ -69,6 +72,7 @@ body {
     color: #000;
     background-color: transparent;
 }
+
 
 
 /*Non Nav*/
