@@ -66,9 +66,88 @@
     <!-- Intro Section -->
     <section id="intro" class="intro-section">
         <div class="container divContainer">
-            
+           
         </div>
     </section>
+ 
+     <!-- Contact section -->
+    <section id="interest" class="contact-section">
+        <div class="container divContainer">
+             <h1>CONTACT US</h1>
+            <div class="row">
+                <div class="col-sm-12" style="visibility: visible; margin-bottom: 25px;">
+                    <h3 class="column-title"></h3>
+                    <div class="column-div">
+                        <p>Have a question or need more information?  Contact the team by using the form below.   The Itty Bitty Kids Expo is organised by Lieza Events Pty Ltd.   <a href="http://www.liezaevents.com.au">www.liezaevents.com.au</a> </p>
+                        <span class="center">* Required Field.</span>
+                        <form class="form-horizontal" id="reg-form" method = "post" action ="process_registration.php">
+                            <fieldset>
+
+                                <!-- Form Name -->
+                                <legend></legend>
+
+                       
+
+                                <!-- FullName-->
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label" for="txtFName">Name <span class="error">*</span></label>
+                                    <div class="col-md-4">
+                                        <input id="txtFName" name="fname" type="text" class="form-control input-md" required>
+                                       
+                              
+                                    </div>
+                                </div>
+
+
+
+                                <!-- Email-->
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label" for="txtEmail">Email Address<span class="error">* </span>                                             </label>
+                                    <div class="col-md-4">
+                                        <input id="txtEmail" name="eadd" type="email" class="form-control input-md" required>
+                                        
+                                    </div>
+                                </div>
+                                
+                                
+                                <!-- Subject-->
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label" for="txtSubject">Subject <span class="error"></span></label>
+                                    <div class="col-md-4">
+                                        <input id="txtSubject" name="subject" type="text" class="form-control input-md" required>
+                                       
+                              
+                                    </div>
+                                </div>
+
+                                <!-- Message -->
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label" for="txtComments">Message</label>
+                                    <div class="col-md-4">
+                                        <textarea class="form-control" id="txtComments" name="remarks"></textarea>
+                                    </div>
+                                </div>
+
+                              
+                                <!-- Button -->
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label" for="btnSubmit"></label>
+                                    <div class="col-md-4">
+                                        <button id="btnSubmit" name="btnSubmit" class="btn btn-primary" onclick="alert('Thank you for your interest!')" >Submit</button>                            
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form>
+
+                        <p><a href="">Privacy Policy</a></p>
+                    </div>
+                </div>
+            </div>
+    </section>     
+        
+        
+        
+        
 <br>
 <div class="clear"></div>
     <footer id="footer">

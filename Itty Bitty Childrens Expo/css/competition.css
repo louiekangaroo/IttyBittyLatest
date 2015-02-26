@@ -17,7 +17,7 @@ body {
 
 
 .navbar-default {
-    background-color: rgba(192, 192, 192, 0.2);
+       background-color: rgba(46, 46, 46, 0.8);
     border-bottom: 1px solid #000;
 }
 
@@ -183,6 +183,48 @@ of those sections to manage the look and feel of the site. */
     text-align: center;
     background: rgba(255, 255, 255, 0.1);
 }
+
+.divContainer p {
+    text-align: left;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.column-div {
+    margin-top: 15px;
+    background-color: rgba(235,235,235, .8);   
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 15px;
+}
+
+h1{
+    font-size: 3em;
+    font-weight: bold;
+    line-height: 2em;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.column-title {
+    font-weight: bold;
+    margin-top: 0;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #eee;
+    margin-bottom: 1px;
+    position: relative;
+    text-align:left;
+}
+
+.column-title:after {
+    content: " ";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 40%;
+    border-bottom: 2px solid #45aed6;
+}
+
 
 @media screen and (max-width: 414px) and (max-height: 736px) {
 
