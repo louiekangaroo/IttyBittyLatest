@@ -12,27 +12,37 @@ body {
     background-attachment: fixed;
 
     font-family: 'Roboto', sans-serif;
-    font-weight: 400;
+    font-weight: 400;   
 }
 
 
 
 .navbar-default {
-    background-color: rgba(46, 46, 46, 0.8);
-    border-bottom: 1px solid #000;
+    background-color: rgba(255, 255, 255, 0.0);
+    border-top: 5px solid  #D10000;
+    border-bottom: 0px solid
+        
 }
 
   
   .navbar-default .navbar-nav > li > a {
-        color: #fff;
+        border-radius: 0 0 8px 8px; 
+        padding:3px 15px;
+        background-color: #D3d3d3; 
     }
 
         .navbar-default .navbar-nav > li > a:hover {
-            color: #000;
+            background-color: #D10000; 
+            color: #fff;
+            padding-top: 20px;
+            padding-bottom: 3px; 
+            transition: all .4s ease-in-out;
         }
 
         .navbar-default .navbar-nav > li > a:focus {
-            color: #fff;
+            background-color: #D10000; 
+	        color: #fff;
+             
         }
 
     .navbar-default .navbar-brand {
@@ -48,29 +58,37 @@ body {
         }
 
 #ul-menu li:nth-child(2) {
-    background-color: #F8609A;
+    border-radius: 0 0 8px 8px;
+    background-color: #fff;
     margin-right: 1px;
     
 }
 
 #ul-menu li:nth-child(3) {
-    background-color: #F8609A;
+    border-radius: 0 0 8px 8px;
+    background-color: #fff;
     margin-right: 1px;
 }
 
 #ul-menu li:nth-child(4) {
-    background-color: #F8609A;
+    border-radius: 0 0 8px 8px;
+    background-color: #fff;
     margin-right: 1px;
 }
 
 #ul-menu li:nth-child(5) {
-    background-color: #F8609A;
+    border-radius: 0 0 8px 8px;
+    background-color: #fff;
     margin-right: 1px;
 }
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
-    color: #000;
-    background-color: transparent;
+            background-color: #D10000; 
+            color: #fff;
+            padding-top: 20px;
+            padding-bottom: 3px; 
+            transition: all .4s ease-in-out;
+
 }
 
 
