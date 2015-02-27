@@ -200,8 +200,8 @@ of those sections to manage the look and feel of the site. */
 
 /* hr design */
 hr {
-    width:200px;
-margin: 10px auto;
+    width:500px;
+margin: 1px auto;
 }
 
 hr.style-seven {
@@ -249,12 +249,12 @@ h3
 /* article */
 .news_section
 {
-    width: 395px;
+    width: 380px;
     text-align: left;
     float: left;
     color: white;
     padding: 10px;
-    margin: 2px;
+    margin: 7px;
     border-radius: 20px;
 }
 
@@ -285,7 +285,7 @@ h3
 
 .news_section footer
 {
-    text-align: right;   
+    text-align:justify;
 }
 
 /* button */
