@@ -25,6 +25,7 @@ body {
     }
 
         .navbar-default .navbar-nav > li > a:hover {
+            background-color: #FF8F2B;
             color: #000;
         }
 
@@ -45,23 +46,23 @@ body {
         }
 
 #ul-menu li:nth-child(2) {
-    background-color: #F2D673;
+    background-color: #FF7D0A;
     margin-right: 1px;
     
 }
 
 #ul-menu li:nth-child(3) {
-    background-color: #F2D673;
+    background-color: #FF7D0A;
     margin-right: 1px;
 }
 
 #ul-menu li:nth-child(4) {
-    background-color: #F2D673;
+    background-color: #FF7D0A;
     margin-right: 1px;
 }
 
 #ul-menu li:nth-child(5) {
-    background-color: #F2D673;
+    background-color: #FF7D0A;
     margin-right: 1px;
 }
 

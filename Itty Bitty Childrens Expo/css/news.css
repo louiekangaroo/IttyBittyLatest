@@ -26,6 +26,7 @@ body {
     }
 
         .navbar-default .navbar-nav > li > a:hover {
+            background-color:  #0EADCF;
             color: #000;
         }
 
@@ -46,29 +47,29 @@ body {
         }
 
 #ul-menu li:nth-child(2) {
-    background-color: #62B0FF;
+    background-color: #0C91AC;
     margin-right: 1px;
     
 }
 
 #ul-menu li:nth-child(3) {
-    background-color: #62B0FF;
+    background-color: #0C91AC;
     margin-right: 1px;
 }
 
 #ul-menu li:nth-child(4) {
-    background-color: #62B0FF;
+    background-color: #0C91AC;
     margin-right: 1px;
 }
 
 #ul-menu li:nth-child(5) {
-    background-color: #62B0FF;
+    background-color: #0C91AC;
     margin-right: 1px;
 }
 
 
 #ul-menu li:nth-child(6) {
-    background-color: #62B0FF;
+    background-color: #0C91AC;
     margin-right: 1px;
 }
 

@@ -38,6 +38,7 @@ body {
     }
 
         .navbar-default .navbar-brand:hover {
+            background-color: #357BBB;
             color: #fff;
         }
 
@@ -46,23 +47,23 @@ body {
         }
 
 #ul-menu li:nth-child(2) {
-    background-color: #C00140;
+    background-color: #306FAA;
     margin-right: 1px;
     
 }
 
 #ul-menu li:nth-child(3) {
-    background-color: #C00140;
+    background-color: #306FAA;
     margin-right: 1px;
 }
 
 #ul-menu li:nth-child(4) {
-    background-color: #C00140;
+    background-color: #306FAA;
     margin-right: 1px;
 }
 
 #ul-menu li:nth-child(5) {
-    background-color: #C00140;
+    background-color: #306FAA;
     margin-right: 1px;
 }
 
