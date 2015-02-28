@@ -66,7 +66,7 @@ a:hover , a:active, a:visited, a:link{
 	font-size: 15px;
 }
 
-.homepagetab .item1,.homepagetab .item2,.homepagetab .item3,.homepagetab .item4,.homepagetab .item5,.homepagetab .item6, .homepagetab .item7 {
+.homepagetab .item1,.homepagetab .item2,.homepagetab .item3,.homepagetab .item4,.homepagetab .item5,.homepagetab .item6, .homepagetab .item7{
 	display: block;   
     position: absolute;
     margin: 0px auto;
@@ -83,6 +83,23 @@ a:hover , a:active, a:visited, a:link{
     display: block;
     position: absolute;
 }
+
+
+ .login-panel {
+  background-color: rgba(202,230,255,0.8);
+  padding:5px 15px 5px 15px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  border-radius: 100px;
+  margin-right: 15px;
+  margin-top: 10px;
+  font-size: 14px;
+ }
+
+ .login-panel:hover {
+  cursor: pointer;
+ }
 
 
 /***********************
@@ -106,8 +123,9 @@ a:hover , a:active, a:visited, a:link{
 }
 
 .mobilehomepage {
-        display: none;   
+  display: none;   
  }
+
 
 
 /***********************
