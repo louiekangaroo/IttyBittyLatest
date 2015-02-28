@@ -133,9 +133,11 @@ a:hover , a:active, a:visited, a:link{
 ************************/
 
 @media only screen and (max-width: 414px) and (max-height: 736px)  {
-     .homepagetab {
+     .homepagetab, .login-panel {
             display: none;   
      }
+
+
     
      .mobilehomepage {
             display: block;
@@ -154,7 +156,7 @@ a:hover , a:active, a:visited, a:link{
      }
 
      .itty {
-        color: white;
+        color: #4d4d4d;
      }
 
      .circle-design {
