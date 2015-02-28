@@ -25,8 +25,9 @@ body {
     }
 
         .navbar-default .navbar-nav > li > a:hover {
-            background-color: #E76134;
             color: #000;
+            background-color: #EC6B46;
+            
         }
 
         .navbar-default .navbar-nav > li > a:focus {
@@ -38,6 +39,7 @@ body {
     }
 
         .navbar-default .navbar-brand:hover {
+            
             color: #fff;
         }
 
