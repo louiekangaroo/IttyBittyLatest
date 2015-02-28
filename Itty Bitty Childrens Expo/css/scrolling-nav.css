@@ -66,3 +66,13 @@ html {
         float: right;   
     }
 }
+
+
+.section-title {
+    font-weight: bold;
+    color: #272727;
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 20px;
+}
+

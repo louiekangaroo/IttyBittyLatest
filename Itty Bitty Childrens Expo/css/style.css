@@ -1,4 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,300,100,700,100italic,300italic,400italic,700italic);
+
 *{
 	margin:0;
     padding:0;
@@ -40,7 +41,7 @@ a {
 
 a:hover , a:active, a:visited, a:link{
 	text-decoration: none;
-	color: #fff;
+	color: #4d4d4d;
 }
 
 .circle-design:hover {

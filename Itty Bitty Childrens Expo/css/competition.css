@@ -15,7 +15,6 @@ body {
     font-weight: 400;
 }
 
-
 .navbar-default {
     background-color: rgba(46, 46, 46, 0.8);
     border-bottom: 1px solid #000;
@@ -198,13 +197,7 @@ of those sections to manage the look and feel of the site. */
     padding: 15px;
 }
 
-h1{
-    font-size: 3em;
-    font-weight: bold;
-    line-height: 2em;
-    padding-bottom: 20px;
-    text-transform: uppercase;
-}
+
 
 .column-title {
     font-weight: bold;

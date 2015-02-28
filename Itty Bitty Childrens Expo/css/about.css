@@ -5,7 +5,6 @@
     padding:0;
 }
 
-
 body {
     background: url("../images/bg2.jpg");
     background-size: 100% 100%;
@@ -17,7 +16,7 @@ body {
 }
 
 .navbar-default {
-    background-color: rgba(192, 192, 192, 0.2);
+    background-color: rgba(46, 46, 46, 0.8);
     border-bottom: 1px solid #000;
 }
 
@@ -167,7 +166,7 @@ of those sections to manage the look and feel of the site. */
 
 .about-section {
     height: 100%;
-    
+    overflow: auto;
     padding-top: 150px;
     text-align: center;
     background: rgba(255, 255, 255, 0.1);
@@ -199,13 +198,3 @@ of those sections to manage the look and feel of the site. */
 
 
 }
-
-.section-title {
-    font-weight: bold;
-    color: #272727;
-    text-transform: uppercase;
-    position: relative;
-    padding-bottom: 20px;
-    margin: 0 0 20px;
-}
-
