@@ -1,0 +1,323 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,100,700,100italic,300italic,400italic,700italic);
+
+*{
+    margin:0;
+    padding:0;
+}
+
+body {
+    background: url("../images/bg2.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.navbar-default {
+    background-color: rgba(46, 46, 46, 0.8);
+    border-bottom: 1px solid #000;
+}
+
+    .navbar-default .navbar-nav > li > a {
+        color: #fff;
+    }
+
+        .navbar-default .navbar-nav > li > a:hover {
+            color: #000;
+        }
+
+        .navbar-default .navbar-nav > li > a:focus {
+            color: #fff;
+        }
+
+    .navbar-default .navbar-brand {
+        color: #b1b1b1;
+    }
+
+        .navbar-default .navbar-brand:hover {
+            color: #fff;
+        }
+
+        .navbar-default .navbar-brand:focus {
+            color: #b1b1b1;
+        }
+
+#ul-menu li:nth-child(2) {
+    background-color: #F8609A;
+    margin-right: 1px;
+    
+}
+
+#ul-menu li:nth-child(3) {
+    background-color: #F8609A;
+    margin-right: 1px;
+}
+
+#ul-menu li:nth-child(4) {
+    background-color: #F8609A;
+    margin-right: 1px;
+}
+
+#ul-menu li:nth-child(5) {
+    background-color: #F8609A;
+    margin-right: 1px;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+    color: #000;
+    background-color: transparent;
+}
+
+
+/*Non Nav*/
+#smallLogo {
+    float: left;
+    margin-top: -5px;
+    margin-right: 5px;
+    height: 32px;
+}
+
+#slides {
+    position: relative;
+    top: -75px;
+    border: 1px solid #383838;
+    max-height: 85%;
+    max-width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:#e1e1e1;
+}
+
+    #slides img {
+        max-height: 100%;
+        max-width: 100%;
+    }
+
+.divContainer {
+    margin-top:-90px;
+}
+
+
+/*ACCORDION*/
+
+#accordion input {
+    display: none;
+}
+#accordion label {
+    background: #383838;
+    color:#fff;
+    cursor: pointer;
+    display: block;
+    margin-bottom: .125em;
+    padding: .25em 1em;
+    z-index: 20;
+}
+#accordion label:hover {
+    background: #b1b1b1;
+}
+
+#accordion input:checked + label {
+    background: #383838;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    color: #fff;
+    margin-bottom: 0;
+}
+#accordion article {
+    background: #fff;
+    height:0px;
+    overflow:hidden;
+    z-index:10;
+}
+
+#accordion input:checked article {
+}
+#accordion input:checked ~ article {
+    border-bottom-left-radius: .25em;
+    border-bottom-right-radius: .25em;
+    height: auto;
+    margin-bottom: .125em;
+}
+
+
+div article {
+    font-size:.8em;
+}
+
+p {
+    margin:0;
+}
+
+
+
+/* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
+The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children 
+of those sections to manage the look and feel of the site. */
+
+.intro-section {
+    height: 100%;
+    overflow: auto;
+    padding-top: 150px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.logs-section {
+    height: 100%;
+    overflow: auto;
+    padding-top: 150px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.newsletter-section {
+    height: 100%;
+    overflow: auto;
+    padding-top: 150px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.photogallery-section {
+    height: 100%;
+    overflow: auto;
+    padding-top: 150px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/*CONTENTS*/
+
+.divContainer p {
+    text-align: left;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.column-div {
+    margin-top: 15px;
+    background-color: rgba(235,235,235, .8);   
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 15px;
+}
+
+.column-title {
+    font-weight: bold;
+    margin-top: 0;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #eee;
+    margin-bottom: 1px;
+    position: relative;
+    text-align:left;
+}
+
+.column-title:after {
+    content: " ";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 40%;
+    border-bottom: 2px solid #45aed6;
+}
+
+
+
+
+input[type='text'] {
+    padding: 6px 12px;
+}
+span
+{
+    color: red;
+}
+.center
+{
+    text-align: center;
+}
+.right
+{
+    text-align: right;
+}
+
+#form-web {
+    display:none;
+}
+
+/*TABLE*/
+table {
+    margin: 0 auto;
+}
+
+td, th {
+  padding:10px; 
+  border:solid 1px #000;
+}
+
+th {
+    background-color: #b0b0b0;
+}
+
+input {
+  border:solid 1px #ccc;
+  border-radius: 5px;
+  padding:7px 14px;
+  margin-bottom:10px
+}
+input:focus {
+  outline:none;
+  border-color:#aaa;
+}
+.sort {
+  padding:8px 30px;
+  border-radius: 6px;
+  border:none;
+  display:inline-block;
+  color:#fff;
+  text-decoration: none;
+  background-color: #28a8e0;
+  height:30px;
+}
+.sort:hover {
+  text-decoration: none;
+  background-color:#1b8aba;
+}
+.sort:focus {
+  outline:none;
+}
+.sort:after {
+  display:inline-block;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  content:"";
+  position: relative;
+  top:-10px;
+  right:-5px;
+}
+.sort.asc:after {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #fff;
+  content:"";
+  position: relative;
+  top:4px;
+  right:-5px;
+}
+.sort.desc:after {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid #fff;
+  content:"";
+  position: relative;
+  top:-4px;
+  right:-5px;
+}
