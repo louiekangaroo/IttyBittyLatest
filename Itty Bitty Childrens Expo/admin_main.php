@@ -94,44 +94,48 @@
                     <div class="column-div">
                        <div id="users">
                         Filter: <input class="search" id="txtSearch" placeholder="Search"/>
-                          <table>
-                            <thead>
-                                <tr>
-                                    <th>Name</th>
-                                    <th>Type</th>
-                                </tr>
-                            </thead>
-                            <tbody class="list">
-                              <tr>
-                                <td class="name">Jonny Stromberg</td>
-                                <td class="type">Exhibitor</td>
-                              </tr>
-                               <tr>
-                                <td class="name">Edd Manalastas</td>
-                                <td class="type">Exhibitor</td>
-                              </tr>
-                               <tr>
-                                <td class="name">Erwin Pablo</td>
-                                <td class="type">Sponsor</td>
-                              </tr>
-                               <tr>
-                                <td class="name">Jefferson Aviso</td>
-                                <td class="type">Exhibitor</td>
-                              </tr>
-                              <tr>
-                                <td class="name">Jonas Arnklint</td>
-                                <td class="type">Exhibitor</td>
-                              </tr>
-                              <tr>
-                                <td class="name">Martina Elm</td>
-                                <td class="type">Sponsor</td>
-                              </tr>
-                              <tr>
-                                <td class="name">Gustaf Lindqvist</td>
-                                <td class="type">Photo Uploading</td>
-                              </tr>
-                            </tbody>
-                          </table>
+                          <?php
+require("connection.php");
+global $con;
+/* check connection */
+if (mysqli_connect_errno()) {
+    printf("Connect failed: %s\n", mysqli_connect_error());
+    exit();
+}
+
+$query = "SELECT CompanyName, FirstName, LastName, EmailAddress, RegType, Date FROM Registration_Info";
+if(!($result = $con->query($query)))
+{
+echo 'Retrieval of data from Database Failed - #'.mysql_errno().': '.mysql_error();
+}
+else
+{
+?>
+<table border="1">
+  <thead>
+    <tr>
+      <th>Company Name</th>
+      <th>Full Name</th>
+      <th>Email Address</th>
+      <th>Registration Type</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody class="list">
+<?php
+        while($row = $result->fetch_array(MYSQLI_BOTH))
+        {
+           echo "<tr><td class='cname'>{$row[0]}</td><td class='name'>{$row[1]} {$row[2]}</td><td class='email'>{$row[3]}</td><td class='type'>{$row[4]}</td><td class='date'>{$row[5]}</td></tr>\n";
+        }
+    }
+    ?>
+   </tbody>
+</table>
+<?php
+          
+$result->close();
+$con->close();
+?>
 
                         </div>
                   </div>
@@ -198,7 +202,7 @@
 
  <script>
   var options = {
-      valueNames: [ 'name', 'type' ]
+      valueNames: [ 'cname', 'name', 'type', 'email', 'date']
     };
 
     var userList = new List('users', options);
