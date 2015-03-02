@@ -74,8 +74,10 @@ if (PEAR::isError($mail)) {
   echo("<p>" . $mail->getMessage() . "</p>");
 } 
 		//echo "record successfully added!";	
-       
-         header('Location:getinvolved.html');
+        echo '<script language="javascript">';
+        echo 'alert("Registration Successful.")';
+        echo '</script>';
+        header('Location:getinvolved.html#interest');
 	 }
 
 ?>
