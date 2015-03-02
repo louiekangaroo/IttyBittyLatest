@@ -245,4 +245,8 @@ font-size: 10;
         background-size: 200% 100%;
     }
 
+     .intro-section, .visinfo-section, .whatson-section, .buyticket-section, .download-section {
+        height: 150%;
+    }
+
 }

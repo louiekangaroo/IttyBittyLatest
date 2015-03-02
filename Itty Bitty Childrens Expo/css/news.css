@@ -402,4 +402,12 @@ span
         background-size: 200% 100%;
     }
 
+     .intro-section, .news-section, .newsletter-section, .blog-section, .gallery-section, .presskit-section {
+        height: 150%;
+    }
+
+    #slider1-container {
+        width: 320px;   
+    }
+
 }

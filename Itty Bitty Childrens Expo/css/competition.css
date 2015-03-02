@@ -228,4 +228,8 @@ of those sections to manage the look and feel of the site. */
         background-size: 200% 100%;
     }
 
+     .intro-section, .info-section, .register-section, .terms-section {
+        height: 150%;
+    }
+
 }
