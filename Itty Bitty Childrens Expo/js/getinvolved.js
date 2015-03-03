@@ -16,5 +16,39 @@ $(document).ready(function() {
         }
     });
 
-	
+    $("#btnSubmit").click(function() {
+
+        var compName = $('#company').val();
+        var compType = $('#company-type option:selected').text();
+        var firstName = $('#txtFName').val();
+        var lastName = $('#txtLName').val();
+        var jobTitle = $('#txtJobTitle').val();
+        var phoneNumber = $('#txtPhone').val();
+        var email = $('#txtEmail').val();
+        var comments = $('#txtComments').val();
+        var regType = $('input[name="regtype"]:checked').val();
+
+        $.ajax({ 
+            type: 'post',
+            url: 'process_registration.php',
+            data: { company : compName,
+                    comptype : compType,
+                    fname : firstName,
+                    lname : lastName,
+                    jobtitle : jobTitle,
+                    pnumber : phoneNumber,
+                    eadd : email,
+                    remarks : comments,
+                    regtype : regType
+            },
+            success: function(output) {
+                  alert('Thank you for your interest...We will contact you for updates.');
+                  window.location.replace("getinvolved.html#interest");
+                  location.reload();
+            },
+            error: function(xhr){
+                alert('Request Status: ' + xhr.status + ' Status Text: ' + xhr.statusText + ' ' + xhr.responseText);
+            }
+        });
+    });
 });
