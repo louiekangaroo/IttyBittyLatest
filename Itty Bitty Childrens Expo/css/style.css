@@ -33,11 +33,11 @@ body {
     background-position: center; 
     line-height:110px;
     text-align:center;
+
+
+
 }
 
-a {
-	color: #fff;
-}
 
 a:hover , a:active, a:visited, a:link{
 	text-decoration: none;
