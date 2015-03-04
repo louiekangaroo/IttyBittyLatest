@@ -17,7 +17,7 @@ $(document).ready(function() {
     });
 
     $("#btnSubmit").click(function() {
-
+        $('#btnSubmit').attr('disabled','disabled');
         var compName = $('#company').val();
         var compType = $('#company-type option:selected').text();
         var firstName = $('#txtFName').val();
@@ -42,13 +42,23 @@ $(document).ready(function() {
                     regtype : regType
             },
             success: function(output) {
+                if (output.indexOf("HY000/2002") > -1) {
+                  alert('We are having connection issue as of the moment, please try to register later.')
+                  window.location.replace("getinvolved.html#interest");
+                  location.reload();
+                } else {
                   alert('Thank you for your interest...We will contact you for updates.');
                   window.location.replace("getinvolved.html#interest");
                   location.reload();
+                }
+                 $('#btnSubmit').removeAttr('disabled');
+
             },
             error: function(xhr){
                 alert('Request Status: ' + xhr.status + ' Status Text: ' + xhr.statusText + ' ' + xhr.responseText);
             }
+       
         });
+        
     });
 });
