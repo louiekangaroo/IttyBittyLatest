@@ -151,7 +151,7 @@ $con->close();
                 <div class="col-sm-12" style="visibility: visible; margin-bottom: 25px;">
                     <h3 class="column-title"></h3>
                     <div class="column-div">
-                        <form class="form-horizontal" id="reg-form" method = "post" action ="process_registration.php">
+                        <form class="form-horizontal" id="reg-form" method = "post" action ="process_newsletter.php" enctype="multipart/form-data">
                             <fieldset>
 
                                 <!-- Form Name -->
@@ -161,7 +161,7 @@ $con->close();
                                 <div class="form-group">
                                     <label class="col-md-4 control-label" for="txtTitle">Title</label>
                                     <div class="col-md-4">
-                                        <input id="txtTitle" name="title" type="text" class="form-control input-md" required>
+                                        <input id="txtTitle" name="newshead" type="text" class="form-control input-md" required>
                                        
                               
                                     </div>
@@ -170,12 +170,19 @@ $con->close();
                 
                                 <!-- Email-->
                                 <div class="form-group">
-                                    <label class="col-md-4 control-label" for="txtMessage">Message</label>
+                                    <label class="col-md-4 control-label" for="txtMessage">News</label>
                                     <div class="col-md-4">
-                                        <textarea class="form-control" id="txtMessage" name="message" style="height: 200px"></textarea>
+                                        <textarea class="form-control" id="txtMessage" name="newsbody" style="height: 200px"></textarea>
                                     </div>
+                                    
                                 </div>
-
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label" for="fileselect">News Image</label>
+                                    <div class="col-md-4">                                  
+	                               <input type="file" id="fileselect" name="fileselect" />
+                                    </div>
+                                    
+                                </div>
                                 <!-- Button -->
                                 <div class="form-group">
                                     <label class="col-md-4 control-label" for="btnSubmit"></label>
