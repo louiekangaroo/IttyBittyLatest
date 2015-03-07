@@ -49,7 +49,7 @@ $host = "smtp.mandrillapp.com";
 $port = "587";					 // should be 25 by default, but needs to be whichever port the mail server will be using for smtp 
 $timeout = "45";				 // typical timeout. try 45 for slow servers
 $username = "louiedbest@gmail.com"; // the login for your smtp
-$password = "uGYBDA7FBJ15FxBGIQAC6A";			// the password for your smtp
+$password = "pXC6c47zRA17xmQneipLOQ";			// the password for your smtp
  
 $headers = array ('From' => $From,
   'To' => $to,
