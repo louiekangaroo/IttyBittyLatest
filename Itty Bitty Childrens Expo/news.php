@@ -29,6 +29,9 @@
     <script type="text/javascript" src="js/jssor.js"></script>
     <script type="text/javascript" src="js/jssor.slider.js"></script>
     <script type="text/javascript" src="js/news-slider.js"></script>
+    <script type="text/javascript" src="js/news.js"></script>
+<script type="text/javascript" src="js/ajaxloader.js"></script>
+
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
@@ -170,28 +173,12 @@
                                         
                                     </div>
                                 </div>
-                                <?php
-
-                                    require_once "MailChimp.php";
-                                    $MailChimp = new \Drewm\MailChimp('4e63c19b5cdcc2816645336b2b942137-us10');
-
-                            if (isset($_POST['eadd'])) {
-                                       $result = $MailChimp->call('lists/subscribe', array(
-                                            'id'                => '78c1005620',
-                                            'email'             => array('email'=>$_POST['eadd']),
-                                            'merge_vars'        => array('FNAME'=>$_POST['fname'], 'LNAME'=>$_POST['lname']),
-                                            'double_optin'      => false,
-                                            'update_existing'   => true,
-                                            'replace_interests' => false,
-                                            'send_welcome'      => false,
-                                            ));
-                            }
-                                ?>
+                                
                                 <!-- Button -->
                                 <div class="form-group">
                                     <label class="col-md-4 control-label" for="btnSubmit"></label>
                                     <div class="col-md-4">
-                                        <button id="btnSubmit" name="btnSubmit" class="btn btn-primary" onclick="alert('Thank you for your interest!')" >Submit</button>                            
+                                        <button id="btnSubmit" name="btnSubmit" class="btn btn-primary" >Submit</button>                            
                                     </div>
                                 </div>
                             </fieldset>
