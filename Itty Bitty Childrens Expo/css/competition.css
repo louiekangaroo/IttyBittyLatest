@@ -219,6 +219,9 @@ of those sections to manage the look and feel of the site. */
     border-bottom: 2px solid #45aed6;
 }
 
+#social-for-mobile {
+        display: none;
+    }
 
 @media screen and (max-width: 414px) and (max-height: 736px) {
 
@@ -230,6 +233,19 @@ of those sections to manage the look and feel of the site. */
 
      .intro-section, .info-section, .register-section, .terms-section {
         height: 150%;
+    }
+
+    #social-for-mobile {
+        display: inline-block;
+    }
+
+    #social-for-web {
+        display: none;
+    }
+
+    #footer-info {
+        width: 59%;
+        display: inline-block;
     }
 
 }

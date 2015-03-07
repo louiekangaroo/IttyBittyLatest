@@ -369,12 +369,29 @@ span
     display:none;
 }
 
+#social-for-mobile {
+        display: none;
+    }
+
 @media screen and (max-width: 414px) and (max-height: 736px) {
 
     body {
         background-image:url("../images/bg2.jpg");
         background-repeat:no-repeat;
         background-size: 200% 100%;
+    }
+
+     #social-for-mobile {
+        display: inline-block;
+    }
+
+    #social-for-web {
+        display: none;
+    }
+
+    #footer-info {
+        width: 59%;
+        display: inline-block;
     }
 
 }
