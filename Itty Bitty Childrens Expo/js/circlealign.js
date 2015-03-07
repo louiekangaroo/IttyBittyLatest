@@ -47,7 +47,7 @@ $( document ).ready(function() {
 					location.href = "getinvolved.html"
 					break;
 				case "News":
-					location.href = "news.html";
+					location.href = "news.php";
 					break;
 				case "Contact Us":
 					location.href = "contact.html"
