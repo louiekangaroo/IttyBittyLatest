@@ -13,6 +13,8 @@
  *
  * @author     Chris Corbyn
  */
+set_time_limit(600);
+
 class Swift_Transport_StreamBuffer extends Swift_ByteStream_AbstractFilterableInputStream implements Swift_Transport_IoBuffer
 {
     /** A primary socket */
