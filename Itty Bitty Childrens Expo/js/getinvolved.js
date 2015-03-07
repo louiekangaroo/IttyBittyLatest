@@ -28,37 +28,42 @@ $(document).ready(function() {
         var comments = $('#txtComments').val();
         var regType = $('input[name="regtype"]:checked').val();
 
-        $.ajax({ 
-            type: 'post',
-            url: 'process_registration.php',
-            data: { company : compName,
-                    comptype : compType,
-                    fname : firstName,
-                    lname : lastName,
-                    jobtitle : jobTitle,
-                    pnumber : phoneNumber,
-                    eadd : email,
-                    remarks : comments,
-                    regtype : regType
-            },
-            success: function(output) {
-                if (output.indexOf("HY000/2002") > -1) {
-                  alert('We are having connection issue as of the moment, please try to register later.')
-                  window.location.replace("getinvolved.html#interest");
-                  location.reload();
-                } else {
-                  alert('Thank you for your interest...We will contact you for updates.');
-                  window.location.replace("getinvolved.html#interest");
-                  location.reload();
-                }
-                 $('#btnSubmit').removeAttr('disabled');
 
-            },
-            error: function(xhr){
-                alert('Request Status: ' + xhr.status + ' Status Text: ' + xhr.statusText + ' ' + xhr.responseText);
-            }
-       
-        });
+        if (!firstName == "" && !lastName == "" && !phoneNumber == "" && !email == "" ) {
+            $.ajax({ 
+                type: 'post',
+                url: 'process_registration.php',
+                data: { company : compName,
+                        comptype : compType,
+                        fname : firstName,
+                        lname : lastName,
+                        jobtitle : jobTitle,
+                        pnumber : phoneNumber,
+                        eadd : email,
+                        remarks : comments,
+                        regtype : regType
+                },
+                success: function(output) {
+                    if (output.indexOf("HY000/2002") > -1) {
+                      alert('We are having connection issue as of the moment, please try to register later.')
+                      window.location.replace("getinvolved.html#interest");
+                      location.reload();
+                    } else {
+                      alert('Thank you for your interest...We will contact you for updates.');
+                      window.location.replace("getinvolved.html#interest");
+                      location.reload();
+                    }
+                     $('#btnSubmit').removeAttr('disabled');
+
+                },
+                error: function(xhr){
+                    alert('Request Status: ' + xhr.status + ' Status Text: ' + xhr.statusText + ' ' + xhr.responseText);
+                }
+           
+            });
+        } else {
+            $('#btnSubmit').removeAttr('disabled');
+        }
         
     });
 });
