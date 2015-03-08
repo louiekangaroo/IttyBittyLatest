@@ -140,19 +140,23 @@ a:hover , a:active, a:visited, a:link{
 
     
      .mobilehomepage {
+            background: url("../images/bg2.jpg");
+            background-size: 160% 100%;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
             display: block;
-            height: 10em;
-            position: relative;
+            position: fixed;
+            height: 100%;
+            width: 100%;
+            margin: 0 auto;
      }
 
      .mobilehomepage .submenu {
-            margin: 0;
-            position: absolute;
-            top: 100%;
-            left: 50%;
-            margin-right: -50%;
-            margin-top: 30%;
-            transform: translate(-50%, -50%);
+            margin: 0 auto;
+            position: relative;
+            text-align: center;
+            display: table;
+            margin-top: 50%;
      }
 
      .itty {
