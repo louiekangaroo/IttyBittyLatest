@@ -1,7 +1,6 @@
 <?php 
-require_once "Mail.php";
-require_once "Mail/mime.php";
-require_once 'lib/swift_required.php';
+
+include ('lib/swift_required.php');
 require("connection.php");
 global $con;
 
@@ -25,8 +24,8 @@ $clean_eadd = stripslashes($eadd);
 $clean_remarks = stripslashes($remarks);
 $clean_regtype = stripslashes($regtype);
 
-$sql = ("CALL InsertRegistration('$clean_compname','$clean_comptype','$clean_fname','$clean_lname','$clean_jobtitle','$clean_pnumber','$clean_eadd','$clean_remarks','$clean_regtype')");
 
+     $sql = ("CALL  InsertRegistration('$clean_compname','$clean_comptype','$clean_fname','$clean_lname','$clean_jobtitle','$clean_pnumber','$clean_eadd','$clean_remarks','$clean_regtype')");
 $addregister = $con->query($sql);
 
 	 if($addregister == false)
@@ -35,10 +34,11 @@ $addregister = $con->query($sql);
 	 }
      else
      {
-         
-$transport = Swift_SmtpTransport::newInstance('smtp.mandrillapp.com', 587)
-        ->setUsername('louiedbest@gmail.com')
-        ->setPassword('pXC6c47zRA17xmQneipLOQ');
+           
+$transport = Swift_SmtpTransport::newInstance('p3plcpnl0389.prod.phx3.secureserver.net', 465,'ssl')
+      ->setUsername('admin@ittybittykids.com.au')
+      ->setPassword('~1q2w3e4r')
+      ;
          
 // Create the message
 $message = Swift_Message::newInstance();
@@ -64,7 +64,7 @@ $message->setBody("<b>Company/Organisation Name: </b>".$clean_compname."<br><br>
                 
 $mailer = Swift_Mailer::newInstance($transport);
 $send = $mailer->send($message);
-   }
+  
         if(!$send)
         {
             echo "msg not send";
@@ -73,4 +73,5 @@ $send = $mailer->send($message);
         {
             echo "msg send";
         } 
+        }
 ?>
