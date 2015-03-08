@@ -4,7 +4,7 @@ $(document).ready(function() {
 /*---- Loader ----*/
         function ajaxindicatorstart(text) {
             if ($('body').find('#resultLoading').attr('id') != 'resultLoading') {
-                $('body').append('<div id="resultLoading" style="display:none"><div><img src="Images/ajax-loader.gif"><div>' + text + '</div></div><div class="bg"></div></div>');
+                $('body').append('<div id="resultLoading" style="display:none"><div><img src="images/ajax-loader.gif"><div>' + text + '</div></div><div class="bg"></div></div>');
             }
 
 
