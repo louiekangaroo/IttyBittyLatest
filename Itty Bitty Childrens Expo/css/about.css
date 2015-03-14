@@ -243,8 +243,20 @@ of those sections to manage the look and feel of the site. */
         background-size: 200% 100%;
     }
 
+     h1 {
+        font-size: 1.5em;
+    }
+    
+    .column-title {
+        font-size: 1em;
+        padding-bottom: 5px;
+        margin-top: -15px;
+    }
+    
+
     .intro-section, .about-section, .faq-section, .sponsors-section {
-        height: 150%;
+        /*height: 150%;*/
+        overflow: auto;
     }
 
     #social-for-mobile {

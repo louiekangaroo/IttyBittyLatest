@@ -381,6 +381,17 @@ span
         background-size: 200% 100%;
     }
 
+     h1 {
+        font-size: 1.5em;
+    }
+    
+    .column-title {
+        font-size: 1em;
+        padding-bottom: 5px;
+        margin-top: -15px;
+    }
+    
+
      #social-for-mobile {
         display: inline-block;
     }

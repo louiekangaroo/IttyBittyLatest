@@ -167,28 +167,31 @@ The padding is very important to make sure the scrollspy picks up the right area
 of those sections to manage the look and feel of the site. */
 
 .intro-section {
-    height: 100%;
+    /*height: 125%;*/
     padding-top: 150px;
     text-align: center;
     background: rgba(255, 255, 255, 0.1);
+    overflow: auto;
 }
 
 .news-section {
-    height: 100%;
+    /*height: 125%;*/
     padding-top: 150px;
     text-align: center;
     background: rgba(255, 255, 255, 0.1);
+    overflow: auto;
 }
 
 .newsletter-section {
-    height: 100%;
+    /*height: 125%;*/
     padding-top: 150px;
     text-align: center;
     background: rgba(255, 255, 255, 0.1);
+    overflow: auto;
 }
 
 .blog-section {
-    height: 100%;
+    /*height: 125%;*/
     overflow: auto;
     clear:both;
     padding-top: 150px;
@@ -196,16 +199,18 @@ of those sections to manage the look and feel of the site. */
     background: rgba(255, 255, 255, 0.1);
 }
 .gallery-section {
-    height: 100%;
+    /*height: 125%;*/
     padding-top: 150px;
     text-align: center;
     background: rgba(255, 255, 255, 0.1);
+    overflow: auto;
 }
 .presskit-section {
-    height: 100%;
+    /*height: 125%;*/
     padding-top: 150px;
     text-align: center;
     background: rgba(255, 255, 255, 0.1);
+    overflow: auto;
 }
 
 
@@ -406,8 +411,19 @@ span
         background-size: 200% 100%;
     }
 
+     h1 {
+        font-size: 1.5em;
+    }
+    
+    .column-title {
+        font-size: 1em;
+        padding-bottom: 5px;
+        margin-top: -15px;
+    }
+    
+
      .intro-section, .news-section, .newsletter-section, .blog-section, .gallery-section, .presskit-section {
-        height: 150%;
+        overflow: auto;
     }
 
     #slider1-container {
@@ -430,6 +446,10 @@ span
     #footer-info {
         width: 59%;
         display: inline-block;
+    }
+
+    #slider1-container {
+        width: 85%;
     }
 
 }
