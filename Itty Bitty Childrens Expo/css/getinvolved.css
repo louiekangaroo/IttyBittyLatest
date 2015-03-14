@@ -193,7 +193,7 @@ of those sections to manage the look and feel of the site. */
 }
 
 .interest-section {
-    height: 150%;
+    height: 125%;
     padding-top: 150px;
     text-align: center;
     background: rgba(255, 255, 255, 0.1);
@@ -285,8 +285,13 @@ span
         margin-top: -15px;
     }
     
-    .intro-section, .exhibitor-section, .sponsor-section, .volunteer-section, .interest-section {
+    .intro-section, .exhibitor-section, .sponsor-section, .volunteer-section {
         height: 150%;   
+        overflow: auto;
+    }
+
+    .interest-section {
+        height: 175%;
         overflow: auto;
     }
 

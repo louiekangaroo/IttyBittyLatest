@@ -166,7 +166,7 @@
         <div class="container divContainer">
             <h1 class="section-title">IMAGE GALLERY</h1>
             <h4 class="column-title"></h4>
-            <div id="slider1_container" style="position: relative; top: 0px; left: 0px; width: 800px;
+            <div id="slider1_container" style="position: relative; top: 0px; left: 0px; 
         height: 456px; background: #191919; overflow: hidden; margin:10px auto;">
 
         <!-- Loading Screen -->

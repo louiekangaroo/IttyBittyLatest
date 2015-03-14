@@ -403,6 +403,12 @@ span
         display: none;
     }
 
+
+
+#slider1-container {
+   width: 800px;
+}
+
 @media screen and (max-width: 414px) and (max-height: 736px) {
 
     body {
@@ -422,13 +428,14 @@ span
     }
     
 
-     .intro-section, .news-section, .newsletter-section, .blog-section, .gallery-section, .presskit-section {
+     .intro-section, .news-section, .newsletter-section, .blog-section, .presskit-section {
         height: 150%;
         overflow: auto;
     }
 
-    #slider1-container {
-        width: 320px;   
+    .gallery-section {
+        height: 100%;
+        overflow: auto;
     }
 
     #modal {
@@ -452,7 +459,6 @@ span
     #slider1-container {
         width: 85%;
     }
-
 }
 
 /* NEWS */
