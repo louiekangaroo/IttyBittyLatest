@@ -161,7 +161,7 @@ The padding is very important to make sure the scrollspy picks up the right area
 of those sections to manage the look and feel of the site. */
 
 .intro-section {
-    /*height: 100%;*/
+    height: 125%;
     padding-top: 150px;
     text-align: center;
     background: rgba(255, 255, 255, 0.1);
@@ -169,7 +169,7 @@ of those sections to manage the look and feel of the site. */
 }
 
 .visinfo-section {
-    /*height: 100%;*/
+    height: 125%;
     padding-top: 150px;
     text-align: center;
     background: rgba(255, 255, 255, 0.1);
@@ -177,7 +177,7 @@ of those sections to manage the look and feel of the site. */
 }
 
 .whatson-section {
-    /*height: 100%;*/
+    height: 125%;
     padding-top: 150px;
     text-align: center;
     background: rgba(255, 255, 255, 0.1);
@@ -185,7 +185,7 @@ of those sections to manage the look and feel of the site. */
 }
 
 .buyticket-section {
-    /*height: 100%;*/
+    height: 125%;
     padding-top: 150px;
     text-align: center;
     background: rgba(255, 255, 255, 0.1);
@@ -193,7 +193,7 @@ of those sections to manage the look and feel of the site. */
 }
 
 .download-section {
-    /*height: 100%;*/
+    height: 125%;
     padding-top: 150px;
     text-align: center;
     background: rgba(255, 255, 255, 0.1);
@@ -266,7 +266,7 @@ font-size: 10;
     
 
      .intro-section, .visinfo-section, .whatson-section, .buyticket-section, .download-section {
-        /*height: 150%;*/
+        height: 150%;
         overflow: auto;
     }
 

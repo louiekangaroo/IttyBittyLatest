@@ -200,7 +200,7 @@ The padding is very important to make sure the scrollspy picks up the right area
 of those sections to manage the look and feel of the site. */
 
 .intro-section {
-    height: 100%;
+    height: 125%;
     overflow: auto;
     padding-top: 150px;
     text-align: center;
@@ -208,7 +208,7 @@ of those sections to manage the look and feel of the site. */
 }
 
 .about-section {
-    height: 100%;
+    height: 125%;
     overflow: auto;
     padding-top: 150px;
     text-align: center;
@@ -216,7 +216,7 @@ of those sections to manage the look and feel of the site. */
 }
 
 .faq-section {
-    height: 100%;
+    height: 125%;
     overflow: auto;
     padding-top: 150px;
     text-align: center;
@@ -224,7 +224,7 @@ of those sections to manage the look and feel of the site. */
 }
 
 .sponsors-section {
-    height: 100%;
+    height: 125%;
     overflow: auto;
     padding-top: 150px;
     text-align: center;
@@ -255,7 +255,7 @@ of those sections to manage the look and feel of the site. */
     
 
     .intro-section, .about-section, .faq-section, .sponsors-section {
-        /*height: 150%;*/
+        height: 150%;
         overflow: auto;
     }
 
