@@ -428,8 +428,13 @@ span
     }
     
 
-     .intro-section, .news-section, .newsletter-section, .blog-section, .presskit-section {
+     .intro-section, .news-section,  .blog-section, .presskit-section {
         height: 150%;
+        overflow: auto;
+    }
+
+    .newsletter-section {
+        height: 250%;
         overflow: auto;
     }
 
