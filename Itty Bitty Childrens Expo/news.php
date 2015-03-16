@@ -63,7 +63,7 @@
                         <a class="page-scroll" href="#page-top"></a>
                     </li>
                      <li>
-                        <a class="page-scroll" href="index.html">Home</a>
+                        <a class="page-scroll" href="index">Home</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#news">News articles</a>
@@ -100,9 +100,13 @@
             <h1 class="section-title">NEWS ARTICLES</h1>
             <h4 class="column-title"></h4>
             <div class="column-div">
-                <!-- NEWS ?php include("select.php"); ?>-->
-                No news available this time.
-            a</div>
+            <?php
+                 include("newsdetails.php");
+               
+              ?>      
+                </div>
+                
+            </div>
     </section>
 
      <section id="newsletter" class="newsletter-section">
@@ -166,7 +170,7 @@
         <div class="container divContainer">
             <h1 class="section-title">IMAGE GALLERY</h1>
             <h4 class="column-title"></h4>
-            <div id="slider1_container" style="position: relative; top: 0px; left: 0px; 
+            <div id="slider1_container" style="position: relative; top: 0px; left: 0px; width: 800px;
         height: 456px; background: #191919; overflow: hidden; margin:10px auto;">
 
         <!-- Loading Screen -->
@@ -181,55 +185,10 @@
 
         <!-- Slides Container -->
         <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 800px; height: 356px; overflow: hidden;">
-            <div>
-                <img u="image" src="images/alila/01.jpg" />
-                <img u="thumb" src="images/alila/thumb-01.jpg" />
-            </div>
-            <div>
-                <img u="image" src="images/alila/02.jpg" />
-                <img u="thumb" src="images/alila/thumb-02.jpg" />
-            </div>
-            <div>
-                <img u="image" src="images/alila/03.jpg" />
-                <img u="thumb" src="images/alila/thumb-03.jpg" />
-            </div>
-            <div>
-                <img u="image" src="images/alila/04.jpg" />
-                <img u="thumb" src="images/alila/thumb-04.jpg" />
-            </div>
-            <div>
-                <img u="image" src="images/alila/05.jpg" />
-                <img u="thumb" src="images/alila/thumb-05.jpg" />
-            </div>
-            <div>
-                <img u="image" src="images/alila/06.jpg" />
-                <img u="thumb" src="images/alila/thumb-06.jpg" />
-            </div>
-            <div>
-                <img u="image" src="images/alila/07.jpg" />
-                <img u="thumb" src="images/alila/thumb-07.jpg" />
-            </div>
-            <div>
-                <img u="image" src="images/alila/08.jpg" />
-                <img u="thumb" src="images/alila/thumb-08.jpg" />
-            </div>
-            <div>
-                <img u="image" src="images/alila/09.jpg" />
-                <img u="thumb" src="images/alila/thumb-09.jpg" />
-            </div>
-            <div>
-                <img u="image" src="images/alila/10.jpg" />
-                <img u="thumb" src="images/alila/thumb-10.jpg" />
-            </div>
-            
-            <div>
-                <img u="image" src="images/alila/11.jpg" />
-                <img u="thumb" src="images/alila/thumb-11.jpg" />
-            </div>
-            <div>
-                <img u="image" src="images/alila/12.jpg" />
-                <img u="thumb" src="images/alila/thumb-12.jpg" />
-            </div>
+            <?php
+                 include("Photo_Gallery_Dtls.php");
+               
+              ?>      
         </div>
         
         <!-- Arrow Navigator Skin Begin -->
@@ -371,7 +330,7 @@
              <br>
 <div class="clear"></div>
     <footer id="footer">
-        <div class="container-fluid">
+        <div class="container">
             <div class="row">
                 <div class="col-sm-6" id="footer-info">
                     &copy; 2015 Itty Bitty Children Expo. <!-- Designed by <a target="_blank" href="http://shapebootstrap.net/" title="Ang mga pogi ng CS">Aviso, Llagas, Manalastas</a> -->

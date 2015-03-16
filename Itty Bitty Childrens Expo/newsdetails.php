@@ -1,18 +1,14 @@
 <?php
-$servername = "db4free.net";
-$username = "ittybitty02";
-$password = "~1q2w3e4r";
-$dbname = "ittybitty02";
-
 // Create connection
-$conn = mysqli_connect($servername, $username, $password, $dbname);
+require("connection.php");
+global $con;
 // Check connection
-if (!$conn) {
+if (!$con) {
     die("Connection failed: " . mysqli_connect_error());
 }
 
 $sql = "SELECT id, News, News_Body, News_Image, Date_Created, Status FROM News_Info limit 0, 2";
-$result = mysqli_query($conn, $sql);
+$result = mysqli_query($con, $sql);
 
 if (mysqli_num_rows($result) > 0) {
     // output data of each row
@@ -56,7 +52,7 @@ if (mysqli_num_rows($result) > 0) {
                 </div>";
     }
 } else {
-    echo "0 results";
+    echo "No news available at this time";
 }
 
 ?>
