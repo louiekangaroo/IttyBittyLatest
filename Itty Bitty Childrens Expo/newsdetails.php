@@ -21,16 +21,79 @@ if (mysqli_num_rows($result) > 0) {
         
        echo "<div class=\"news_container\">
                     <div class = \"news-image\"> "
-                        . '<img src="data:image/jpeg;base64,'. base64_encode($row['News_Image']). '" width="130" height="130" alt=\"Mountain View\">' . "
+                        . '<img src="data:image/jpeg;base64,'. base64_encode($row['News_Image']). '" width="130" height="130" alt=\"image\">' . "
                     </div>
                     <div>
                         <h2 class=\"news-header\"> ". $row["News"]. "</h2>
                         <p class=\"news-body\">" . $post . "..</p>
-                        <p><a href=\"#modal\" class=\"btn btn-success\">Read More</a></p>
+                        <p><a href=\"#". $row["id"]. "\" class=\"btn btn-success\">Read More</a></p>
                     </div>
                 </div>
                 <div class = \"clear\"></div>
-                <div id=\"modal\">
+                <style>
+#". $row["id"]. " {
+	left:50%;
+	margin:-100px 0 0 -40%;
+	opacity: 0;
+	position:absolute;
+	top:-50%;
+	visibility: hidden;
+	width:80%;
+	box-shadow:0 3px 7px rgba(0,0,0,.25);
+	box-sizing:border-box;
+	transition: all 0.4s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
+	-webkit-transition: all 0.4s ease-in-out;
+    padding-top: 60px;
+}
+	#". $row["id"]. ":target {
+		opacity: 1;
+		top:50%;
+		visibility: visible;
+	}
+#". $row["id"]. " .header,#". $row["id"]. " .footer {
+	border-bottom: 1px solid #e7e7e7;
+	border-radius: 5px 5px 0 0;
+}
+	#". $row["id"]. " .footer {
+		border:none;
+		border-top: 1px solid #e7e7e7;
+		border-radius: 0 0 5px 5px;
+	}
+#". $row["id"]. " h2 {
+	margin:0;
+}
+#". $row["id"]. " .btn {
+	float:right;
+}
+#". $row["id"]. " .copy,#". $row["id"]. " .header, #". $row["id"]. " .footer {
+	padding:15px;
+}
+.modal-content {
+	background: #f7f7f7;
+	position: relative;
+	z-index: 20;
+	border-radius:5px;
+}
+#". $row["id"]. " .copy {
+	background: #fff;
+}
+
+#". $row["id"]. " .overlay {
+	background-color: #000;
+	background: rgba(0,0,0,.5);
+	height: 100%;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 10;
+}
+                </style>
+                
+                
+                
+                <div id=\"". $row["id"]. "\">
                     <div class=\"modal-content\">
                         <div class=\"header\">
                             <h2 class=\"news-header2\">". $row["News"]. "</h2>
@@ -38,7 +101,7 @@ if (mysqli_num_rows($result) > 0) {
                         <div class=\"copy\">
                             <div class = \"news-image\">
                             
-                            <div class = \"news-image\">" . '<img src="data:image/jpeg;base64,'. base64_encode($row['News_Image']). '"  width="300" height="300" class=\"img-responsive\"  alt=\"Mountain View\">' . "</div>
+                            <div class = \"news-image\">" . '<img src="data:image/jpeg;base64,'. base64_encode($row['News_Image']). '"  width="300" height="300" class=\"img-responsive\"  alt=\"image\">' . "</div>
                             </div>                        
                         <p class=\"news-body\">" . $row["News_Body"]. "</p>
                             <div class = \"clear\"></div>
