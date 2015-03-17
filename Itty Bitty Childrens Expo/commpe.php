@@ -14,11 +14,13 @@ if (mysqli_num_rows($result) > 0) {
          echo "
         <div>" . '<img src="data:image/jpeg;base64,'. base64_encode($row['Compe_Image']). '" width="800px" height="365px" alt="Mountain View" u="image">' . "
              " . '<img src="data:image/jpeg;base64,'. base64_encode($row['Compe_Image']). '" width="72px" height="72px" alt="Mountain View" u="thumb">' . "
-            </div>
-                 <div u=caption t=\"*\" class=\"captionOrange\"  style=\"position:absolute; left:20px; top: 30px; width:300px; height:30px;\">"
+             <div u=caption t=\"*\" class=\"captionOrange\"  style=\"position:absolute; left:20px; top: 30px; width:300px; height:30px;\">"
                 . $row['Email'] . 
                 "</div>
+            </div>
+                 
        ";
+        
         
     }
 } else {
